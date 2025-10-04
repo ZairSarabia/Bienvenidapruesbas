@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat en vivo - Universidad Anáhuac</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #ff7a00;
+      color: white;
+      padding: 1.5rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    main {
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>Centro de Atención Anáhuac</header>
+  <main>
+    <h2>Chat en vivo con nuestras áreas de soporte</h2>
+    <p>Haz clic en el ícono de chat que aparecerá en la esquina inferior derecha.</p>
+  </main>
+
+  <!-- Start of Rocket.Chat Livechat Script -->
+	<script type="text/javascript">
+	(function(w, d, s, u) {
+		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+		j.async = true; j.src = 'https://uamx-rocketchat.anahuac.mx/livechat/rocketchat-livechat.min.js?_=201903270000';
+		h.parentNode.insertBefore(j, h);
+	})(window, document, 'script', 'https://uamx-rocketchat.anahuac.mx/livechat');
+	</script>
+  
+</body>
+</html>
